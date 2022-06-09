@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <head>
+
+    </head>
+<button onclick="paramideTriangle();"> Click me</button>
+
+    <body>
+
+    <script>
+ function triangle(){
+debugger
+var length=10;
+var line = "";
+  for (var i = 1; i <= length; i++) {
+
+    for (var j = 1; j <= i; j++) {
+      line += "*";
+    }
+
+    line += "\n";
+  }
+  return console.log(line);
+ }
+
+ function paramideTriangle(){
+debugger
+   let n = 5;
+   let string = "";
+    // External loop
+    for (let i = 1; i <= n; i++) {
+    // printing spaces
+    for (let j = 1; j <= n - i; j++) {
+        string += " ";
+    }
+    // printing star
+    for (let k = 0; k < 2 * i - 1; k++) {
+        string += "*";
+    }
+    string += "<br>";
+    }
+    document.write(string)
+    }
+
+    </script>
+    </body>
+    </html>
